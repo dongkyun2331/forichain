@@ -1,0 +1,15 @@
+syntax = "proto3";
+package forichain.forichain;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/dongkyun2331/forichain/x/forichain/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "forichain/x/forichain/Params";
+  option (gogoproto.equal) = true;
+
+  
+}
